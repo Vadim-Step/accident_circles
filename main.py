@@ -1,7 +1,6 @@
 import random
 import sys
 
-from PyQt5 import uic
 from PyQt5.QtWidgets import QWidget, QApplication, QLabel, QMainWindow
 from PyQt5.QtGui import QPainter, QPolygon, QColor
 from UI import Ui_MainWindow
@@ -10,7 +9,6 @@ from UI import Ui_MainWindow
 class WindowDraw(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
-        uic.loadUi('UI.ui', self)
         self.initUI()
         self.setMouseTracking(True)
         self.coord = []
